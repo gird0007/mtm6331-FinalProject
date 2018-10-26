@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SONAR | HOME</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=KoHo');
+  </style>
 </head>
 
 <body>
@@ -13,7 +17,7 @@
   <header>
     <div class="hero">
       <div class="logo">
-        <img src="" alt="">
+        <img src="./img/9logo.png" alt="logo_placeholder">
       </div>
     </div>
     <div class="big-buttons">
