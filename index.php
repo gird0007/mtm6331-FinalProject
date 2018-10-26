@@ -10,6 +10,7 @@
 
 <body>
   <div class="wrapper">
+  <header>
     <div class="hero">
       <div class="logo">
         <img src="" alt="">
@@ -23,6 +24,7 @@
         <a href="#">promote yourself</a>
       </div>
     </div>
+  </header>
   </div>
 </body>
 
