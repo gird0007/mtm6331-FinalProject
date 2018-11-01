@@ -27,29 +27,31 @@
         <a href="#">promote yourself</a>
       </div>
     </div>
+    <div class="sidebar-container" id="side-contain">
     <div class="sidebar-arrow" id="sidebar">
-      <img src="./img/open-arrow.png" alt="open-sidebar">
-      <img src="./img/close-arrow.png" alt="open-sidebar">
+      <img src="./img/open-arrow.png" alt="open-sidebar" class="arrow open" id="open">
+      <img src="./img/close-arrow.png" alt="close-sidebar" class="arrow close" id="close">
     </div>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar-box">
       <div class="logo">
         <img src="./img/9logo.png" alt="logo_placeholder">
       </div>
       <hr>
       <div class="search"></div>
       <h2>explore more genres</h2>
-      <ul>
-        <li><a href="#">genre 1</a></li>
-        <li><a href="#">genre 2</a></li>
-        <li><a href="#">genre 3</a></li>
-        <li><a href="#">genre 4</a></li>
-      </ul>
-      <div class="social">
         <ul>
-          <li><a href="#"><img src="./img/footer_social/facebook.png" alt="facebook_logo" srcset=""></a></li>
-          <li><a href="#"><img src="./img/footer_social/instagram.png" alt="instagram_logo" srcset=""></a></li>
-          <li><a href="#"><img src="./img/footer_social/twitter.png" alt="twitter_logo" srcset=""></a></li>
+          <li><a href="#">genre 1</a></li>
+          <li><a href="#">genre 2</a></li>
+          <li><a href="#">genre 3</a></li>
+          <li><a href="#">genre 4</a></li>
         </ul>
+        <div class="social">
+          <ul>
+            <li><a href="#"><img src="./img/footer_social/facebook.png" alt="facebook_logo" srcset=""></a></li>
+            <li><a href="#"><img src="./img/footer_social/instagram.png" alt="instagram_logo" srcset=""></a></li>
+            <li><a href="#"><img src="./img/footer_social/twitter.png" alt="twitter_logo" srcset=""></a></li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -127,6 +129,7 @@ C/O https://placeholder.com/" alt="">
     </div>
   </footer>
   </div>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
