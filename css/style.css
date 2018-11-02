@@ -207,7 +207,7 @@ footer .section {
 .sidebar-arrow {
   width: 50px;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+  padding: 5px;
   border-radius: 50%;
   position: fixed;
   right: 15px;
@@ -421,7 +421,7 @@ footer .section {
   overflow: hidden;
 }
 
-.genre-main article .artist-img img {
+.genre-main article .artist-img a img {
   width: 100%;
 }
 

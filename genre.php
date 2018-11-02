@@ -61,9 +61,11 @@
       <article>
         <div class="artist">
           <div class="artist-img">
+            <a href="artist.php">
             <img src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/" alt="">
+            </a>
           </div>
           <div class="artist-info">
             <h1>artist name</h1>
