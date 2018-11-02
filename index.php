@@ -33,6 +33,16 @@
       <img src="./img/close-arrow.png" alt="close-sidebar" class="arrow close" id="close">
     </div>
     <div class="sidebar" id="sidebar-box">
+      <div class="user">
+        <div class="account-icon">
+          <img src="./img/assets/account-icon.png" alt="account-icon">
+        </div>
+        <p>name</p>
+        <div class="setting-icon">
+          <img src="./img/assets/settings-icon.png" alt="settings-icon">
+        </div>
+      </div>
+      <!-- <hr> -->
       <div class="logo">
         <img src="./img/9logo.png" alt="logo_placeholder">
       </div>
@@ -52,6 +62,9 @@
             <li><a href="#"><img src="./img/footer_social/twitter.png" alt="twitter_logo" srcset=""></a></li>
           </ul>
         </div>
+        <!-- <div class="back-to-home">
+          <p><a href="index.php">back to home</a></p>
+        </div> -->
       </div>
     </div>
   </header>
@@ -71,7 +84,7 @@ C/O https://placeholder.com/" alt="">
       <div class="article-button">
         <a href="#">view profile</a>
       </div>
-      <p><a href="#">view more in this genre</a></p>
+      <p><a href="genre.php">view more in this genre</a></p>
     </article>
     <article>
       <h2>Genre</h2>
@@ -85,7 +98,7 @@ C/O https://placeholder.com/" alt="">
       <div class="article-button">
         <a href="#">view profile</a>
       </div>
-      <p><a href="#">view more in this genre</a></p>
+      <p><a href="genre.php">view more in this genre</a></p>
     </article>
     <article>
       <h2>Genre</h2>
@@ -99,7 +112,7 @@ C/O https://placeholder.com/" alt="">
       <div class="article-button">
         <a href="#">view profile</a>
       </div>
-      <p><a href="#">view more in this genre</a></p>
+      <p><a href="genre.php">view more in this genre</a></p>
     </article>
   </main>
   <hr>
