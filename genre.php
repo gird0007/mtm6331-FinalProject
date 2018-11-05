@@ -68,19 +68,21 @@ C/O https://placeholder.com/" alt="">
             </a>
           </div>
           <div class="artist-info">
-            <h1>artist name</h1>
+          <a href="artist.php"><h1>artist name</h1></a>
             <h2>location</h2>
             <h3>genre/subgenre</h3>
           </div>
         </div>
         <div class="artist">
           <div class="artist-img">
+          <a href="artist.php">
             <img src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/" alt="">
+          </a>
           </div>
           <div class="artist-info">
-            <h1>artist name</h1>
+          <a href="artist.php"><h1>artist name</h1></a>
             <h2>location</h2>
             <h3>genre/subgenre</h3>
           </div>
@@ -89,24 +91,28 @@ C/O https://placeholder.com/" alt="">
       <article>
         <div class="artist">
           <div class="artist-img">
+          <a href="artist.php">
             <img src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/" alt="">
+          </a>
           </div>
           <div class="artist-info">
-            <h1>artist name</h1>
+          <a href="artist.php"><h1>artist name</h1></a>
             <h2>location</h2>
             <h3>genre/subgenre</h3>
           </div>
         </div>
         <div class="artist">
           <div class="artist-img">
+          <a href="artist.php">
             <img src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/" alt="">
+          </a>
           </div>
           <div class="artist-info">
-            <h1>artist name</h1>
+          <a href="artist.php"><h1>artist name</h1></a>
             <h2>location</h2>
             <h3>genre/subgenre</h3>
           </div>
@@ -115,24 +121,28 @@ C/O https://placeholder.com/" alt="">
       <article>
         <div class="artist">
           <div class="artist-img">
+          <a href="artist.php">
           <img src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/" alt="">
+          </a>
           </div>
           <div class="artist-info">
-            <h1>artist name</h1>
+          <a href="artist.php"><h1>artist name</h1></a>
             <h2>location</h2>
             <h3>genre/subgenre</h3>
           </div>
         </div>
         <div class="artist">
           <div class="artist-img">
+          <a href="artist.php">
             <img src="https://via.placeholder.com/150
 
 C/O https://placeholder.com/" alt="">
+          </a>
           </div>
           <div class="artist-info">
-            <h1>artist name</h1>
+          <a href="artist.php"><h1>artist name</h1></a>
             <h2>location</h2>
             <h3>genre/subgenre</h3>
           </div>

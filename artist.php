@@ -13,12 +13,12 @@
 <body>
 <div class="wrapper">
 <header>
-    <div class="hero">
-      <div class="logo">
-        <img src="./img/9logo.png" alt="logo_placeholder">
-      </div>
+  <div class="hero">
+    <div class="logo">
+      <img src="./img/9logo.png" alt="logo_placeholder">
     </div>
-    <div class="sidebar-container" id="side-contain">
+  </div>
+  <div class="sidebar-container" id="side-contain">
     <div class="sidebar-arrow" id="sidebar">
       <img src="./img/open-arrow.png" alt="open-sidebar" class="arrow open" id="open">
       <img src="./img/close-arrow.png" alt="close-sidebar" class="arrow close" id="close">
@@ -56,9 +56,60 @@
         <!-- <div class="back-to-home">
           <p><a href="index.php">back to home</a></p>
         </div> -->
+    </div>
+  </div>
+  <div class="genre-back">
+    <div class="button-back">
+      <h1>< back to genre</h1>
+    </div>
+  </div>
+</header>
+<main class="artist-main">
+  <article>
+    <div class="artist">
+      <div class="artist-img">
+            <img src="https://via.placeholder.com/400
+
+C/O https://placeholder.com/" alt="">
+          </div>
+          <div class="artist-info">
+            <h1>artist name</h1>
+            <h2>location</h2>
+            <h3>genre/subgenre</h3>
       </div>
     </div>
-  </header>
+  </article>
+  <div class="booking">
+    <div class="book-button">
+      <h1>book this artist</h1>
+    </div>
+  </div>
+  <div class="about-artist">
+    <div class="text">
+      <h2>about</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et in perferendis laudantium minima enim, delectus quam aperiam repudiandae beatae ea! Facilis dolorem illo corporis minima.</p>
+      <div class="read">
+        <p><a href="#">read more</a></p>
+      </div>
+    </div>
+    <div class="about-artist-images">
+      <div class="about-img">
+        <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/" alt="">
+      </div>
+      <div class="about-img">
+        <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="tracks-container">
+    <h2>tracks</h2>
+  </div>
+
+</main>
 </div>
 <script src="./js/index.js"></script>
 </body>
