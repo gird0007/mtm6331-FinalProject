@@ -619,6 +619,125 @@ footer .section {
   text-align: center;
   text-transform: uppercase;
 }
+
+.calender {
+  width: 100%;
+}
+
+.calender h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calender .contain-info {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calender .contain-info .date {
+  width: 100px;
+  height: auto;
+  border: 1px solid black;
+  margin-right: 1rem;
+}
+
+.calender .contain-info .date .day-word {
+  margin: 0;
+}
+
+.calender .contain-info .date .day-word h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.calender .contain-info .date .day-num {
+  margin: 0;
+  background-color: rgba(125, 125, 125, 0.2);
+}
+
+.calender .contain-info .date .day-num h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.calender .contain-info .date .month {
+  margin: 0;
+}
+
+.calender .contain-info .date .month h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.calender .contain-info .info {
+  width: 60%;
+}
+
+.calender .contain-info .info h4 {
+  margin: 0.8rem 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.calender .contain-info .buy-tickets {
+  width: calc(100% / 3 - 1rem);
+}
+
+.calender .contain-info .buy-tickets .button {
+  width: 100px;
+  padding: 0.8rem 0;
+  margin: 0;
+}
+
+.artist-main .similar {
+  width: 100%;
+  padding: 10px;
+}
+
+.artist-main .similar .similar-artists {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3 - 5px), 1fr));
+  object-fit: cover;
+  grid-auto-flow: column dense;
+}
+
+.artist-main .similar .similar-artists .artist {
+  width: 100%;
+}
+
+.similar-artists .artist-img {
+  width: 100%;
+}
+
+.similar-artists .artist-img img {
+  width: 100%;
+}
+
+.similar-artists .artist-info a h1 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.similar-artists .artist-info h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.similar-artists .artist-info h3 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
 /* @media all and (min-width: 35rem) and (max-width: 60rem) {
 
 } */

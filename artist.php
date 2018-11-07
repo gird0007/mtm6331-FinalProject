@@ -108,7 +108,85 @@ C/O https://placeholder.com/" alt="">
   <div class="tracks-container">
     <h2>tracks</h2>
   </div>
+  <div class="calender">
+    <h2>upcoming events</h2>
+    <div class="contain-info">
+      <div class="date">
+        <div class="day-word">
+          <h2>mon</h2>
+        </div>
+        <div class="day-num">
+          <h1>05</h1>
+        </div>
+        <div class="month">
+          <h2>oct</h2>
+        </div>
+      </div>
+      <div class="info">
+        <h4>venue</h4>
+        <h4>city, province</h4>
+        <h4>full date</h4>
+      </div>
+      <div class="buy-tickets">
+        <div class="button">
+          <a href="#">
+            buy tickets
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="similar">
+    <h2>similar artists</h2>
+    <div class="similar-artists">
+    <div class="left-arrow">
+    <div class="artist">
+      <div class="artist-img">
+        <a href="artist.php">
+          <img src="https://via.placeholder.com/150
 
+C/O https://placeholder.com/" alt="">
+        </a>
+      </div>
+      <div class="artist-info">
+        <a href="artist.php"><h1>artist name</h1></a>
+        <h2>location</h2>
+        <h3>genre/subgenre</h3>
+      </div>
+    </div>
+    </div>
+    <div class="artist">
+      <div class="artist-img">
+        <a href="artist.php">
+          <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/" alt="">
+        </a>
+      </div>
+      <div class="artist-info">
+        <a href="artist.php"><h1>artist name</h1></a>
+        <h2>location</h2>
+        <h3>genre/subgenre</h3>
+      </div>
+    </div>
+    <div class="right-arrow">
+    <div class="artist">
+      <div class="artist-img">
+        <a href="artist.php">
+          <img src="https://via.placeholder.com/150
+
+C/O https://placeholder.com/" alt="">
+        </a>
+      </div>
+      <div class="artist-info">
+        <a href="artist.php"><h1>artist name</h1></a>
+        <h2>location</h2>
+        <h3>genre/subgenre</h3>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
 </main>
 </div>
 <script src="./js/index.js"></script>
