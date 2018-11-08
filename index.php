@@ -16,7 +16,7 @@
   <header>
     <div class="hero">
       <div class="logo">
-        <img src="./img/9logo.png" alt="logo_placeholder">
+        <a href="index.php"><img src="./img/9logo.png" alt="logo_placeholder"></a>
       </div>
     </div>
     <div class="big-buttons">
@@ -82,7 +82,7 @@ C/O https://placeholder.com/" alt="">
       <h3>Lorem Ipsum</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
       <div class="article-button">
-        <a href="#">view profile</a>
+        <a href="artist.php">view profile</a>
       </div>
       <p><a href="genre.php">view more in this genre</a></p>
     </article>
@@ -96,7 +96,7 @@ C/O https://placeholder.com/" alt="">
       <h3>Lorem Ipsum</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
       <div class="article-button">
-        <a href="#">view profile</a>
+        <a href="artist.php">view profile</a>
       </div>
       <p><a href="genre.php">view more in this genre</a></p>
     </article>
@@ -110,7 +110,7 @@ C/O https://placeholder.com/" alt="">
       <h3>Lorem Ipsum</h3>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
       <div class="article-button">
-        <a href="#">view profile</a>
+        <a href="artist.php">view profile</a>
       </div>
       <p><a href="genre.php">view more in this genre</a></p>
     </article>

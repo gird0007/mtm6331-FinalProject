@@ -15,7 +15,7 @@
     <header class="genre-header">
       <div class="hero">
         <div class="genre-name">
-          <h1>genre 1</h1>
+          <a href="genre.php"><h1>genre 1</h1></a>
         </div>
       </div>
       <div class="sidebar-container" id="side-contain">

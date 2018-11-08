@@ -15,7 +15,7 @@
 <header>
   <div class="hero">
     <div class="logo">
-      <img src="./img/9logo.png" alt="logo_placeholder">
+      <a href="index.php"><img src="./img/9logo.png" alt="logo_placeholder"></a>
     </div>
   </div>
   <div class="sidebar-container" id="side-contain">
@@ -148,11 +148,11 @@ C/O https://placeholder.com/" alt="">
 C/O https://placeholder.com/" alt="">
         </a>
       </div>
-      <div class="artist-info">
+      <!-- <div class="artist-info">
         <a href="artist.php"><h1>artist name</h1></a>
         <h2>location</h2>
         <h3>genre/subgenre</h3>
-      </div>
+      </div> -->
     </div>
     </div>
     <div class="artist">
@@ -178,16 +178,47 @@ C/O https://placeholder.com/" alt="">
 C/O https://placeholder.com/" alt="">
         </a>
       </div>
-      <div class="artist-info">
+      <!-- <div class="artist-info">
         <a href="artist.php"><h1>artist name</h1></a>
         <h2>location</h2>
         <h3>genre/subgenre</h3>
-      </div>
+      </div> -->
     </div>
     </div>
     </div>
   </div>
+  <div class="booking">
+    <div class="book-button">
+      <h1>book this artist</h1>
+    </div>
+  </div>
 </main>
+<hr>
+<footer>
+    <div class="section">
+      <ul>
+        <li><a href="#">site map</a></li>
+        <li><a href="#">faq</a></li>
+        <li><a href="#">legal</a></li>
+        <li><a href="#">privacy</a></li>
+      </ul>
+    </div>
+    <div class="section">
+      <ul>
+        <li><a href="#"><img src="./img/footer_social/facebook.png" alt="facebook_logo" srcset=""></a></li>
+        <li><a href="#"><img src="./img/footer_social/instagram.png" alt="instagram_logo" srcset=""></a></li>
+        <li><a href="#"><img src="./img/footer_social/twitter.png" alt="twitter_logo" srcset=""></a></li>
+      </ul>
+    </div>
+    <div class="section">
+      <div class="one">
+        <img src="./img/9logo.png" alt="logo">
+      </div>
+      <div class="two">
+        <p>&copy; Lorem, ipsum. 2018</p>
+      </div>
+    </div>
+  </footer>
 </div>
 <script src="./js/index.js"></script>
 </body>
