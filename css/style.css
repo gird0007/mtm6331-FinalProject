@@ -492,6 +492,11 @@ footer .section {
   align-items: center;
 }
 
+.genre-back .button-back a {
+  text-decoration: none;
+  color: white;
+}
+
 .genre-back .button-back h1 {
   margin: 0;
   text-transform: uppercase;

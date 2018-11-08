@@ -60,7 +60,7 @@
   </div>
   <div class="genre-back">
     <div class="button-back">
-      <h1>< back to genre</h1>
+      <a href="genre.php"><h1>< back to genre</h1></a>
     </div>
   </div>
 </header>
