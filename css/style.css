@@ -1,0 +1,660 @@
+* {
+  box-sizing: border-box;
+  font-family: 'KoHo', sans-serif; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0; }
+
+.wrapper {
+  width: 100%;
+  height: 100%; }
+
+.wrapper header {
+  width: 100%;
+  height: 300px; }
+
+.wrapper header .hero {
+  background-color: aqua;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero .genre-name {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 1rem; }
+
+.hero .genre-name a {
+  text-decoration: none; }
+
+.hero .genre-name h1 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: white; }
+
+.wrapper header .hero .logo {
+  width: 50%; }
+
+.wrapper header .hero .logo img {
+  width: 100%; }
+
+.big-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 0; }
+
+.button {
+  width: calc(100% / 2 - 2rem);
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.button a {
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+  font-size: 0.667rem; }
+
+main {
+  width: 100%; }
+
+.banner {
+  width: 100%;
+  padding: 1rem 0;
+  background-color: lightgray;
+  text-align: center; }
+
+.banner h1 {
+  margin: 0;
+  text-transform: uppercase; }
+
+article:nth-child(even) {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center; }
+
+article:nth-child(odd) {
+  width: 100%;
+  margin: 10px 0;
+  text-align: center;
+  background-color: rgba(125, 125, 125, 0.2); }
+
+article:nth-child(odd) h2 {
+  padding-top: 1rem; }
+
+article h2 {
+  margin: 1rem; }
+
+article:nth-child(even) p {
+  padding: 0 1rem; }
+
+article:nth-child(odd) p {
+  padding: 1rem;
+  padding-top: 0;
+  margin: 0; }
+
+article .img-contain {
+  width: 95%;
+  margin: 0 auto; }
+
+article .img-contain img {
+  width: 100%; }
+
+article:nth-child(odd) .article-button {
+  margin-bottom: 1rem; }
+
+article .article-button {
+  width: 150px;
+  margin: 0 auto;
+  padding: 0.8rem 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.article-button a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.667rem; }
+
+hr {
+  width: 95%;
+  margin: 0 auto; }
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+footer .section {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.section ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 1rem; }
+
+.section:nth-child(2) ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.section:nth-child(2) ul li {
+  width: 20%; }
+
+.section ul li a {
+  text-decoration: none;
+  color: black; }
+
+.section:nth-child(2) ul li a img {
+  width: 100%; }
+
+.section:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.section .one img {
+  width: 100%; }
+
+.section .two p {
+  font-size: 0.667rem; }
+
+.sidebar-arrow {
+  width: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  transition: all 1s 0.1s; }
+
+.sidebar-arrow img {
+  width: 100%; }
+
+.open {
+  display: block; }
+
+.close {
+  display: none; }
+
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  color: white;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  transition: right 1s 0.1s; }
+
+.sidebar .user {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  border-bottom: 1px solid white; }
+
+.sidebar .user .account-icon {
+  width: 30px;
+  margin: 5px; }
+
+.sidebar .user .account-icon img {
+  width: 100%; }
+
+.sidebar .user .setting-icon {
+  width: 30px;
+  margin: 5px; }
+
+.sidebar .user .setting-icon img {
+  width: 100%; }
+
+.sidebar .user p {
+  text-transform: uppercase;
+  font-size: 0.7rem; }
+
+.sidebar .logo {
+  margin-top: 25px;
+  width: 50%; }
+
+.sidebar .logo img {
+  width: 100%; }
+
+.sidebar .search {
+  width: 150px;
+  height: 30px;
+  background-color: white; }
+
+.sidebar h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase; }
+
+.sidebar ul {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.sidebar ul li {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid white;
+  text-align: center; }
+
+.sidebar ul li:last-child {
+  border-bottom: 1px solid white; }
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase; }
+
+.sidebar .back-to-home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.back-to-home p a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.7rem; }
+
+.social ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row; }
+
+.social ul li {
+  width: 20%;
+  border-top: none; }
+
+.social ul li:last-child {
+  border-bottom: none; }
+
+.social ul li a img {
+  width: 100%; }
+
+.right {
+  right: 50%;
+  transition: all 1s 0.1s; }
+
+.sidebar-open {
+  right: 0;
+  transition: right 1s 0.1s; }
+
+.wrapper .genre-header {
+  width: 100%;
+  height: 220px; }
+
+.wrapper .genre-header .hero {
+  background-color: aqua;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.genre-main {
+  width: 100%; }
+
+.genre-main article {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.genre-main article:nth-child(odd) {
+  background-color: white;
+  padding: 1rem 0; }
+
+.genre-main article:nth-child(even) {
+  background-color: rgba(125, 125, 125, 0.2);
+  padding: 1rem 0; }
+
+.genre-main article .artist {
+  width: calc(100% / 2 - 2rem);
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; }
+
+.genre-main article .artist-img {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.genre-main article .artist-img a {
+  line-height: 0;
+  width: 100%; }
+
+.genre-main article .artist-img a img {
+  width: 100%; }
+
+.genre-main article .artist-info {
+  width: 100%;
+  margin: 0.5rem 0;
+  border-left: 1px solid black;
+  border-right: 1px solid black; }
+
+.genre-main article .artist-info h3 {
+  margin: 5px 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0.7rem; }
+
+.genre-main article .artist-info h2 {
+  margin: 5px 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem; }
+
+.genre-main article .artist-info h1 {
+  margin: 5px 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0.9rem; }
+
+.genre-main article .artist-info a {
+  text-decoration: none;
+  color: black; }
+
+.genre-back {
+  width: 100%;
+  height: 100px;
+  background-color: darkgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.genre-back .button-back {
+  width: 230px;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.genre-back .button-back a {
+  text-decoration: none;
+  color: white; }
+
+.genre-back .button-back h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.artist-main {
+  width: 100%; }
+
+.artist-main article {
+  margin: 1.2rem 0;
+  padding: 1rem 0; }
+
+.artist-main article .artist {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; }
+
+.artist-main article .artist .artist-img {
+  width: 90%;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.artist-main article .artist .artist-img img {
+  width: 100%; }
+
+.artist-main article .artist .artist-info {
+  width: 90%;
+  border-right: 2px solid black;
+  border-left: 2px solid black; }
+
+.artist-main article .artist .artist-info h1 {
+  margin: 1rem 0 0 0;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.artist-main article .artist .artist-info h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem; }
+
+.artist-main article .artist .artist-info h3 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 0.8rem; }
+
+.artist-main .booking {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem; }
+
+.artist-main .booking .book-button {
+  border: 1px solid black;
+  width: 70%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; }
+
+.artist-main .booking .book-button h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+  text-transform: uppercase; }
+
+.artist-main .about-artist {
+  width: 90%;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  position: relative; }
+
+/* .artist-main .about-artist .text {
+} */
+.artist-main .about-artist .text h2 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.artist-main .about-artist .read {
+  position: absolute;
+  right: 0;
+  bottom: 160px; }
+
+.artist-main .about-artist .read p {
+  font-size: 0.667rem; }
+
+.artist-main .about-artist .about-artist-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.artist-main .about-artist .about-artist-images .about-img {
+  width: calc(100% / 2);
+  margin-right: 3.5rem; }
+
+.artist-main .about-artist .about-artist-images .about-img:last-child {
+  margin-right: 0; }
+
+.artist-main .about-artist .about-artist-images .artist-img img {
+  width: 100%; }
+
+.tracks-container {
+  width: 100%; }
+
+.tracks-container h2 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.calender {
+  width: 100%; }
+
+.calender h2 {
+  text-align: center;
+  text-transform: uppercase; }
+
+.calender .contain-info {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.calender .contain-info .date {
+  width: 100px;
+  height: auto;
+  border: 1px solid black;
+  margin-right: 1rem; }
+
+.calender .contain-info .date .day-word {
+  margin: 0; }
+
+.calender .contain-info .date .day-word h2 {
+  margin: 0;
+  font-size: 1.2rem; }
+
+.calender .contain-info .date .day-num {
+  margin: 0;
+  background-color: rgba(125, 125, 125, 0.2); }
+
+.calender .contain-info .date .day-num h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.calender .contain-info .date .month {
+  margin: 0; }
+
+.calender .contain-info .date .month h2 {
+  margin: 0;
+  font-size: 1.2rem; }
+
+.calender .contain-info .info {
+  width: 60%; }
+
+.calender .contain-info .info h4 {
+  margin: 0.8rem 0;
+  text-transform: uppercase;
+  font-size: 0.8rem; }
+
+.calender .contain-info .buy-tickets {
+  width: calc(100% / 3 - 1rem); }
+
+.calender .contain-info .buy-tickets .button {
+  width: 100px;
+  padding: 0.8rem 0;
+  margin: 0; }
+
+.artist-main .similar {
+  width: 100%;
+  padding: 10px; }
+
+.artist-main .similar .similar-artists {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100% / 3 - 5px), 1fr));
+  object-fit: cover;
+  grid-auto-flow: column dense; }
+
+.artist-main .similar .similar-artists .artist {
+  width: 100%; }
+
+.similar-artists .artist-img {
+  width: 100%; }
+
+.similar-artists .artist-img a img {
+  width: 100%;
+  border-radius: 50%; }
+
+.similar-artists .artist-info {
+  padding-bottom: 10px; }
+
+.similar-artists .artist-info a h1 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+.similar-artists .artist-info h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0; }
+
+.similar-artists .artist-info h3 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0; }
+
+.right-arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.2)); }
+
+.right-arrow:hover {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  transition: all 2s 0.5s; }
+
+.left-arrow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.2)); }
+
+.left-arrow:hover {
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  transition: all 2s 0.5s ease; }
+
+/* @media all and (min-width: 35rem) and (max-width: 60rem) {
+
+} */
