@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>SONAR | ARTIST</title>
   <link rel="stylesheet" href="./css/min/style.css">
-  <style>
+  <!-- <style>
     @import url('https://fonts.googleapis.com/css?family=KoHo');
-  </style>
+  </style> -->
 </head>
 <body>
 <div class="wrapper">
