@@ -19,6 +19,10 @@
         <a href="index.php"><img src="./img/9logo.png" alt="logo_placeholder"></a>
       </div>
     </div>
+    <div class="popular">
+        <h1>the hottest local artists.</h1>
+        <h1>all on one radar.</h1>
+    </div>
     <div class="big-buttons">
       <div class="button">
         <a href="#">find an artist</a>
@@ -137,7 +141,7 @@ C/O https://placeholder.com/" alt="">
         <img src="./img/9logo.png" alt="logo">
       </div>
       <div class="two">
-        <p>&copy; Lorem, ipsum. 2018</p>
+        <p>&copy; Lorem. 2018</p>
       </div>
     </div>
   </footer>

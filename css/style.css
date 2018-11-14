@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  letter-spacing: 1px; }
 
 body {
   width: 100%;
@@ -12,14 +13,42 @@ body {
   .wrapper header {
     width: 100%;
     height: 300px; }
+    @media all and (min-width: 35rem) {
+      .wrapper header {
+        height: 370px; } }
+    .wrapper header .popular {
+      display: none; }
+      @media all and (min-width: 35rem) {
+        .wrapper header .popular {
+          display: block;
+          text-align: right;
+          background-color: #4c4c4d;
+          padding: 1rem; }
+          .wrapper header .popular h1 {
+            width: 95%;
+            padding-right: 2rem;
+            border-right: 2px solid #f28021;
+            font-size: 5rem;
+            line-height: 1;
+            margin: 0; }
+            .wrapper header .popular h1:first-child {
+              color: white; }
+            .wrapper header .popular h1:last-child {
+              color: #3bc3f2; } }
     .wrapper header .hero {
-      background-color: aqua;
+      background-color: #3bc3f2;
       height: 220px;
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media all and (min-width: 35rem) {
+        .wrapper header .hero {
+          height: 80px; } }
       .wrapper header .hero .logo {
         width: 50%; }
+        @media all and (min-width: 35rem) {
+          .wrapper header .hero .logo {
+            width: 200px; } }
         .wrapper header .hero .logo a img {
           width: 100%; }
       .wrapper header .hero .genre-name {
@@ -31,24 +60,36 @@ body {
             padding: 0;
             margin: 0;
             text-transform: uppercase;
-            color: white; }
+            color: white;
+            font-family: lemonMilk; }
     .wrapper header .big-buttons {
       width: 100%;
+      height: 82px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
-      padding: 1rem 0; }
+      padding: 1rem 0;
+      background-color: #40403f; }
+      @media all and (min-width: 35rem) {
+        .wrapper header .big-buttons {
+          height: 100px; } }
       .wrapper header .big-buttons .button {
         width: calc(100% / 2 - 2rem);
-        border: 1px solid black;
-        padding: 1rem;
+        height: 85%;
+        background-color: #f28021;
+        padding: 1rem 0;
         border-radius: 10px;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        font-family: roboto-regular;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7); }
+        @media all and (min-width: 35rem) {
+          .wrapper header .big-buttons .button {
+            width: calc(80% / 2 - 2rem); } }
         .wrapper header .big-buttons .button a {
           text-decoration: none;
-          color: red;
+          color: white;
           text-transform: uppercase;
           font-size: 0.667rem; }
   .wrapper main {
@@ -56,37 +97,73 @@ body {
     .wrapper main .banner {
       width: 100%;
       padding: 1rem 0;
-      background-color: lightgray;
-      text-align: center; }
+      background-color: #4c4c4d; }
+      @media all and (min-width: 35rem) {
+        .wrapper main .banner {
+          background-image: url(../img/banner.jpg);
+          background-position: center;
+          background-size: cover;
+          max-width: 100%;
+          height: 200px; } }
       .wrapper main .banner h1 {
         margin: 0;
-        text-transform: uppercase; }
-    .wrapper main article:nth-child(even) {
-      width: 100%;
-      margin: 10px 0;
-      text-align: center; }
-      .wrapper main article:nth-child(even) p {
-        padding: 0 1rem; }
-    .wrapper main article:nth-child(odd) {
-      width: 100%;
-      margin: 10px 0;
-      text-align: center;
-      background-color: rgba(125, 125, 125, 0.2); }
-      .wrapper main article:nth-child(odd) h2 {
-        padding-top: 1rem; }
-      .wrapper main article:nth-child(odd) p {
-        padding: 1rem;
-        padding-top: 0;
-        margin: 0; }
-      .wrapper main article:nth-child(odd) .article-button {
-        margin-bottom: 1rem; }
-    .wrapper main article h2 {
-      margin: 1rem; }
-    .wrapper main article .img-contain {
-      width: 95%;
-      margin: 0 auto; }
-      .wrapper main article .img-contain img {
-        width: 100%; }
+        color: white;
+        text-transform: uppercase;
+        font-family: lemonMilk;
+        text-align: center; }
+        @media all and (min-width: 35rem) {
+          .wrapper main .banner h1 {
+            font-size: 3rem; } }
+    .wrapper main article {
+      color: white; }
+      .wrapper main article:nth-child(even) {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: #40403f; }
+        .wrapper main article:nth-child(even) h2 {
+          padding-top: 1rem;
+          margin-top: 0;
+          font-family: roboto-regular;
+          font-weight: 500;
+          color: #3bc3f2; }
+        .wrapper main article:nth-child(even) p {
+          padding: 1rem;
+          margin: 0;
+          font-family: roboto-light; }
+          .wrapper main article:nth-child(even) p a {
+            color: #3bc3f2;
+            text-decoration: none; }
+      .wrapper main article:nth-child(odd) {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        background-color: #4c4c4d; }
+        .wrapper main article:nth-child(odd) h2 {
+          padding-top: 1rem;
+          margin-top: 0;
+          font-family: roboto-regular;
+          font-weight: 500;
+          color: #3bc3f2; }
+        .wrapper main article:nth-child(odd) p {
+          padding: 1rem;
+          margin: 0;
+          font-family: roboto-light; }
+          .wrapper main article:nth-child(odd) p a {
+            color: #3bc3f2;
+            text-decoration: none; }
+      .wrapper main article h2 {
+        margin: 1rem;
+        font-family: roboto-regular;
+        font-weight: 500; }
+      .wrapper main article .img-contain {
+        width: 95%;
+        margin: 0 auto; }
+        .wrapper main article .img-contain img {
+          width: 100%; }
+      .wrapper main article h3 {
+        font-family: roboto-regular;
+        font-weight: 500; }
     .wrapper main .article-button {
       width: 150px;
       margin: 0 auto;
@@ -102,25 +179,30 @@ body {
         text-transform: uppercase;
         font-size: 0.667rem; }
   .wrapper hr {
-    width: 95%;
-    margin: 0 auto; }
+    width: 100%;
+    margin: 0 auto;
+    border-color: #4c4c4d; }
   .wrapper footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    background-color: #00769f; }
     .wrapper footer .section {
-      width: calc(100% / 3);
+      width: calc(100% / 3 - 20px);
+      margin: 10px;
       display: flex;
       justify-content: space-evenly;
       align-items: center; }
       .wrapper footer .section ul {
         width: 100%;
         list-style: none;
-        padding: 0 1rem; }
+        margin: 0;
+        padding: 0; }
         .wrapper footer .section ul li a {
           text-decoration: none;
-          color: black; }
+          color: white;
+          font-family: roboto-light; }
       .wrapper footer .section:nth-child(2) ul {
         display: flex;
         justify-content: space-between;
@@ -137,7 +219,9 @@ body {
       .wrapper footer .section .one img {
         width: 100%; }
       .wrapper footer .section .two p {
-        font-size: 0.667rem; }
+        font-size: 0.667rem;
+        color: white;
+        font-family: roboto-light; }
 
 .sidebar-arrow {
   width: 50px;
@@ -147,6 +231,9 @@ body {
   position: fixed;
   right: 15px;
   transition: all 1s 0.1s; }
+  @media all and (min-width: 35rem) {
+    .sidebar-arrow {
+      display: none; } }
   .sidebar-arrow img {
     width: 100%; }
   .sidebar-arrow .open {
@@ -201,7 +288,8 @@ body {
     background-color: white; }
   .sidebar h2 {
     font-size: 0.8rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: lemonMilk; }
   .sidebar ul {
     padding: 0;
     width: 100%;
@@ -319,19 +407,22 @@ body {
   margin: 5px 0;
   padding: 0;
   text-transform: uppercase;
-  font-size: 0.7rem; }
+  font-size: 0.7rem;
+  font-family: lemonMilk; }
 
 .genre-main article .artist-info h2 {
   margin: 5px 0;
   padding: 0;
   text-transform: uppercase;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  font-family: lemonMilk; }
 
 .genre-main article .artist-info h1 {
   margin: 5px 0;
   padding: 0;
   text-transform: uppercase;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  font-family: lemonMilk; }
 
 .genre-main article .artist-info a {
   text-decoration: none;
@@ -362,7 +453,8 @@ body {
 .genre-back .button-back h1 {
   margin: 0;
   text-transform: uppercase;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-family: lemonMilk; }
 
 .artist-main {
   width: 100%; }
@@ -397,17 +489,20 @@ body {
 .artist-main article .artist .artist-info h1 {
   margin: 1rem 0 0 0;
   text-transform: uppercase;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-family: lemonMilk; }
 
 .artist-main article .artist .artist-info h2 {
   margin: 0;
   text-transform: uppercase;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-family: lemonMilk; }
 
 .artist-main article .artist .artist-info h3 {
   margin: 0;
   text-transform: uppercase;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  font-family: lemonMilk; }
 
 .artist-main .booking {
   width: 100%;
@@ -429,7 +524,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 1.2rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: lemonMilk; }
 
 .artist-main .about-artist {
   width: 90%;
@@ -444,7 +540,8 @@ body {
 } */
 .artist-main .about-artist .text h2 {
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: lemonMilk; }
 
 .artist-main .about-artist .read {
   position: absolute;
@@ -475,14 +572,16 @@ body {
 
 .tracks-container h2 {
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: lemonMilk; }
 
 .calender {
   width: 100%; }
 
 .calender h2 {
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: lemonMilk; }
 
 .calender .contain-info {
   width: 100%;
@@ -503,7 +602,8 @@ body {
 
 .calender .contain-info .date .day-word h2 {
   margin: 0;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-family: lemonMilk; }
 
 .calender .contain-info .date .day-num {
   margin: 0;
@@ -512,14 +612,16 @@ body {
 .calender .contain-info .date .day-num h1 {
   margin: 0;
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: lemonMilk; }
 
 .calender .contain-info .date .month {
   margin: 0; }
 
 .calender .contain-info .date .month h2 {
   margin: 0;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  font-family: lemonMilk; }
 
 .calender .contain-info .info {
   width: 60%; }
@@ -527,7 +629,8 @@ body {
 .calender .contain-info .info h4 {
   margin: 0.8rem 0;
   text-transform: uppercase;
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+  font-family: lemonMilk; }
 
 .calender .contain-info .buy-tickets {
   width: calc(100% / 3 - 1rem); }
@@ -570,13 +673,15 @@ body {
   font-size: 0.8rem;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-family: lemonMilk; }
 
 .similar-artists .artist-info h3 {
   font-size: 0.7rem;
   text-transform: uppercase;
   text-align: center;
-  margin: 0; }
+  margin: 0;
+  font-family: lemonMilk; }
 
 .right-arrow {
   display: flex;

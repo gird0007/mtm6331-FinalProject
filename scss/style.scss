@@ -1,12 +1,20 @@
 * {
   box-sizing: border-box;
   // font-family: 'KoHo', sans-serif;
+  letter-spacing: 1px;
 }
+
+$title_font: lemonMilk;
+$article_headings: roboto-regular;
+$article_para: roboto-light;
+$weight: 500;
 
 body {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  // font-family: lemonMilk;
+  // font-family: roboto-thin;
 }
 
 .wrapper {
@@ -15,14 +23,46 @@ body {
   header {
     width: 100%;
     height: 300px;
+    @media all and (min-width: 35rem) {
+      height: 370px;
+    }
+    .popular {
+      display: none;
+      @media all and (min-width: 35rem) {
+        display: block;
+        text-align: right;
+        background-color: #4c4c4d;
+        padding: 1rem;
+        h1 {
+          width: 95%;
+          padding-right: 2rem;
+          border-right: 2px solid #f28021;
+          font-size: 5rem;
+          line-height: 1;
+          margin: 0;
+          &:first-child {
+            color: white;
+          }
+          &:last-child {
+            color: #3bc3f2;
+          }
+        }
+      }
+    }
     .hero {
-      background-color: aqua;
+      background-color: #3bc3f2;
       height: 220px;
       display: flex;
       justify-content: center;
       align-items: center;
+      @media all and (min-width: 35rem) {
+        height: 80px;
+      }
       .logo {
         width: 50%;
+        @media all and (min-width: 35rem) {
+          width: 200px;
+        }
         a {
           img {
             width: 100%;
@@ -39,27 +79,39 @@ body {
             margin: 0;
             text-transform: uppercase;
             color: white;
+            font-family: $title_font;
           }
         }
       }
     }
     .big-buttons {
       width: 100%;
+      height: 82px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       padding: 1rem 0;
+      background-color: #40403f;
+      @media all and (min-width: 35rem) {
+        height: 100px;
+      }
       .button {
         width: calc(100% / 2 - 2rem);
-        border: 1px solid black;
-        padding: 1rem;
+        height: 85%;
+        background-color: #f28021;
+        padding: 1rem 0;
         border-radius: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: $article_headings;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7);
+        @media all and (min-width: 35rem) {
+          width: calc(80% / 2 - 2rem);
+        }
         a {
           text-decoration: none;
-          color: red;
+          color: white;
           text-transform: uppercase;
           font-size: 0.667rem;
         }
@@ -71,41 +123,75 @@ body {
     .banner {
       width: 100%;
       padding: 1rem 0;
-      background-color: lightgray;
-      text-align: center;
+      background-color: #4c4c4d;
+      @media all and (min-width: 35rem) {
+        background-image: url(../img/banner.jpg);
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
+        height: 200px;
+      }
       h1 {
         margin: 0;
+        color: white;
         text-transform: uppercase;
+        font-family: $title_font;
+        text-align: center;
+        @media all and (min-width: 35rem) {
+          font-size: 3rem;
+        }
       }
     }
     article {
+      color: white;
       &:nth-child(even) {
         width: 100%;
-        margin: 10px 0;
+        margin: 0;
         text-align: center;
+        background-color: #40403f;
+        h2 {
+          padding-top: 1rem;
+          margin-top: 0;
+          font-family: $article_headings;
+          font-weight: $weight;
+          color: #3bc3f2;
+        }
         p {
-          padding: 0 1rem;
+          padding: 1rem;
+          margin: 0;
+          font-family: $article_para;
+          a {
+            color: #3bc3f2;
+            text-decoration: none;
+          }
         }
       }
       &:nth-child(odd) {
         width: 100%;
-        margin: 10px 0;
+        margin: 0;
         text-align: center;
-        background-color: rgba(125, 125, 125, 0.2);
+        background-color: #4c4c4d;
         h2 {
           padding-top: 1rem;
+          margin-top: 0;
+          font-family: $article_headings;
+          font-weight: $weight;
+          color: #3bc3f2;
         }
         p {
           padding: 1rem;
-          padding-top: 0;
           margin: 0;
-        }
-        .article-button {
-          margin-bottom: 1rem;
+          font-family: $article_para;
+          a {
+            color: #3bc3f2;
+            text-decoration: none;
+          }
         }
       }
       h2 {
         margin: 1rem;
+        font-family: $article_headings;
+        font-weight: $weight;
       }
       .img-contain {
         width: 95%;
@@ -113,6 +199,10 @@ body {
         img {
           width: 100%;
         }
+      }
+      h3 {
+        font-family: $article_headings;
+        font-weight: $weight;
       }
     }
     .article-button {
@@ -133,27 +223,32 @@ body {
     }
   }
   hr {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    border-color: #4c4c4d;
   }
   footer {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #00769f;
     .section {
-      width: calc(100% / 3);
+      width: calc(100% / 3 - 20px);
+      margin: 10px;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       ul {
         width: 100%;
         list-style: none;
-        padding: 0 1rem;
+        margin: 0;
+        padding: 0;
         li {
           a {
             text-decoration: none;
-            color: black;
+            color: white;
+            font-family: $article_para;
           }
         }
       }
@@ -184,6 +279,8 @@ body {
       .two {
         p {
           font-size: 0.667rem;
+          color: white;
+          font-family: $article_para;
         }
       }
     }
@@ -198,6 +295,9 @@ body {
   position: fixed;
   right: 15px;
   transition: all 1s 0.1s;
+  @media all and (min-width: 35rem) {
+    display: none;
+  }
   img {
     width: 100%;
   }
@@ -266,6 +366,7 @@ body {
   h2 {
     font-size: 0.8rem;
     text-transform: uppercase;
+    font-family: $title_font;
   }
   ul {
     padding: 0;
@@ -411,6 +512,7 @@ body {
   padding: 0;
   text-transform: uppercase;
   font-size: 0.7rem;
+  font-family: $title_font;
 }
 
 .genre-main article .artist-info h2 {
@@ -418,6 +520,7 @@ body {
   padding: 0;
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-family: $title_font;
 }
 
 .genre-main article .artist-info h1 {
@@ -425,6 +528,7 @@ body {
   padding: 0;
   text-transform: uppercase;
   font-size: 0.9rem;
+  font-family: $title_font;
 }
 
 .genre-main article .artist-info a {
@@ -461,6 +565,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   font-size: 1.2rem;
+  font-family: $title_font;
 }
 
 .artist-main {
@@ -503,18 +608,21 @@ body {
   margin: 1rem 0 0 0;
   text-transform: uppercase;
   font-size: 1.2rem;
+  font-family: $title_font;
 }
 
 .artist-main article .artist .artist-info h2 {
   margin: 0;
   text-transform: uppercase;
   font-size: 1rem;
+  font-family: $title_font;
 }
 
 .artist-main article .artist .artist-info h3 {
   margin: 0;
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-family: $title_font;
 }
 
 .artist-main .booking {
@@ -540,6 +648,7 @@ body {
   margin: 0;
   font-size: 1.2rem;
   text-transform: uppercase;
+  font-family: $title_font;
 }
 
 .artist-main .about-artist {
@@ -558,6 +667,7 @@ body {
 .artist-main .about-artist .text h2 {
   text-align: center;
   text-transform: uppercase;
+  font-family: $title_font;
 }
 
 .artist-main .about-artist .read {
@@ -597,6 +707,7 @@ body {
 .tracks-container h2 {
   text-align: center;
   text-transform: uppercase;
+  font-family: $title_font;
 }
 
 .calender {
@@ -606,6 +717,7 @@ body {
 .calender h2 {
   text-align: center;
   text-transform: uppercase;
+  font-family: $title_font;
 }
 
 .calender .contain-info {
@@ -631,6 +743,7 @@ body {
 .calender .contain-info .date .day-word h2 {
   margin: 0;
   font-size: 1.2rem;
+  font-family: $title_font;
 }
 
 .calender .contain-info .date .day-num {
@@ -642,6 +755,7 @@ body {
   margin: 0;
   text-align: center;
   font-size: 1.5rem;
+  font-family: $title_font;
 }
 
 .calender .contain-info .date .month {
@@ -651,6 +765,7 @@ body {
 .calender .contain-info .date .month h2 {
   margin: 0;
   font-size: 1.2rem;
+  font-family: $title_font;
 }
 
 .calender .contain-info .info {
@@ -661,6 +776,7 @@ body {
   margin: 0.8rem 0;
   text-transform: uppercase;
   font-size: 0.8rem;
+  font-family: $title_font;
 }
 
 .calender .contain-info .buy-tickets {
@@ -714,6 +830,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 0;
+  font-family: $title_font;
 }
 
 .similar-artists .artist-info h3 {
@@ -721,6 +838,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+  font-family: $title_font;
 }
 
 .right-arrow {
