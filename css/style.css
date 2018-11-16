@@ -100,11 +100,11 @@ body {
       background-color: #4c4c4d; }
       @media all and (min-width: 35rem) {
         .wrapper main .banner {
-          background-image: url(../img/banner.jpg);
+          background-image: url(../../img/banner.jpg);
           background-position: center;
           background-size: cover;
           max-width: 100%;
-          height: 200px; } }
+          padding: 0; } }
       .wrapper main .banner h1 {
         margin: 0;
         color: white;
@@ -113,9 +113,59 @@ body {
         text-align: center; }
         @media all and (min-width: 35rem) {
           .wrapper main .banner h1 {
-            font-size: 3rem; } }
+            font-size: 3rem;
+            padding: 8rem 0;
+            background-color: rgba(76, 76, 77, 0.9); } }
     .wrapper main article {
       color: white; }
+      @media all and (min-width: 35rem) {
+        .wrapper main article {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column; }
+          .wrapper main article .first h2 {
+            font-size: 3.5rem !important;
+            font-family: roboto-thin !important;
+            font-weight: 300 !important; }
+          .wrapper main article .second {
+            width: 80%;
+            height: 200px;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            align-items: center; }
+            .wrapper main article .second .img-contain {
+              width: 45%;
+              margin-right: 0; }
+            .wrapper main article .second .second-column {
+              width: calc(100% / 2);
+              display: flex;
+              justify-content: space-evenly;
+              align-items: flex-start;
+              flex-direction: column; }
+              .wrapper main article .second .second-column h2 {
+                text-align: left;
+                padding-left: 0;
+                margin-bottom: 1rem; }
+              .wrapper main article .second .second-column p {
+                text-align: left;
+                padding-left: 0; }
+              .wrapper main article .second .second-column h3 {
+                font-size: 2rem;
+                font-family: roboto-light !important;
+                font-weight: 300 !important;
+                margin-bottom: 1rem;
+                margin-top: 0; }
+              .wrapper main article .second .second-column .article-button {
+                margin-top: 1rem;
+                margin-left: 0;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.7); }
+          .wrapper main article .third {
+            width: 80%; }
+            .wrapper main article .third p {
+              text-align: right;
+              padding-right: 0 !important; } }
       .wrapper main article:nth-child(even) {
         width: 100%;
         margin: 0;
@@ -139,6 +189,15 @@ body {
         margin: 0;
         text-align: center;
         background-color: #4c4c4d; }
+        @media all and (min-width: 35rem) {
+          .wrapper main article:nth-child(odd) .second {
+            flex-direction: row !important; }
+            .wrapper main article:nth-child(odd) .second .img-contain {
+              margin-left: 0;
+              margin-right: 3.5rem; }
+          .wrapper main article:nth-child(odd) .third p {
+            text-align: left !important;
+            padding-left: 0; } }
         .wrapper main article:nth-child(odd) h2 {
           padding-top: 1rem;
           margin-top: 0;
@@ -168,16 +227,20 @@ body {
       width: 150px;
       margin: 0 auto;
       padding: 0.8rem 0;
-      border: 1px solid black;
+      background-color: #f28021;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center; }
       .wrapper main .article-button a {
-        color: black;
+        color: white;
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 0.667rem; }
+        font-size: 0.667rem;
+        font-family: roboto-light; }
+        @media all and (min-width: 35rem) {
+          .wrapper main .article-button a {
+            font-size: 0.8rem; } }
   .wrapper hr {
     width: 100%;
     margin: 0 auto;
@@ -222,6 +285,15 @@ body {
         font-size: 0.667rem;
         color: white;
         font-family: roboto-light; }
+  .wrapper .genre-header {
+    width: 100%;
+    height: 220px; }
+    .wrapper .genre-header .hero {
+      background-color: aqua;
+      height: 220px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
 
 .sidebar-arrow {
   width: 50px;
@@ -327,16 +399,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row; }
-
-.social ul li {
-  width: 20%;
-  border-top: none; }
-
-.social ul li:last-child {
-  border-bottom: none; }
-
-.social ul li a img {
-  width: 100%; }
+  .social ul li {
+    width: 20%;
+    border-top: none; }
+    .social ul li:last-child {
+      border-bottom: none; }
+    .social ul li a img {
+      width: 100%; }
 
 .right {
   right: 50%;
@@ -346,87 +415,64 @@ body {
   right: 0;
   transition: right 1s 0.1s; }
 
-.wrapper .genre-header {
-  width: 100%;
-  height: 220px; }
-
-.wrapper .genre-header .hero {
-  background-color: aqua;
-  height: 220px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 .genre-main {
   width: 100%; }
-
-.genre-main article {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.genre-main article:nth-child(odd) {
-  background-color: white;
-  padding: 1rem 0; }
-
-.genre-main article:nth-child(even) {
-  background-color: rgba(125, 125, 125, 0.2);
-  padding: 1rem 0; }
-
-.genre-main article .artist {
-  width: calc(100% / 2 - 2rem);
-  margin: 0.5rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column; }
-
-.genre-main article .artist-img {
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  overflow: hidden; }
-
-.genre-main article .artist-img a {
-  line-height: 0;
-  width: 100%; }
-
-.genre-main article .artist-img a img {
-  width: 100%; }
-
-.genre-main article .artist-info {
-  width: 100%;
-  margin: 0.5rem 0;
-  border-left: 1px solid black;
-  border-right: 1px solid black; }
-
-.genre-main article .artist-info h3 {
-  margin: 5px 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-family: lemonMilk; }
-
-.genre-main article .artist-info h2 {
-  margin: 5px 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: lemonMilk; }
-
-.genre-main article .artist-info h1 {
-  margin: 5px 0;
-  padding: 0;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  font-family: lemonMilk; }
-
-.genre-main article .artist-info a {
-  text-decoration: none;
-  color: black; }
+  .genre-main article {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .genre-main article:nth-child(odd) {
+      background-color: white;
+      padding: 1rem 0; }
+    .genre-main article:nth-child(even) {
+      background-color: rgba(125, 125, 125, 0.2);
+      padding: 1rem 0; }
+    .genre-main article .artist {
+      width: calc(100% / 2 - 2rem);
+      margin: 0.5rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column; }
+      .genre-main article .artist .artist-img {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden; }
+        .genre-main article .artist .artist-img a {
+          line-height: 0;
+          width: 100%; }
+          .genre-main article .artist .artist-img a img {
+            width: 100%; }
+      .genre-main article .artist .artist-info {
+        width: 100%;
+        margin: 0.5rem 0;
+        border-left: 1px solid black;
+        border-right: 1px solid black; }
+        .genre-main article .artist .artist-info h3 {
+          margin: 5px 0;
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 0.7rem;
+          font-family: lemonMilk; }
+        .genre-main article .artist .artist-info h2 {
+          margin: 5px 0;
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 0.8rem;
+          font-family: lemonMilk; }
+        .genre-main article .artist .artist-info h1 {
+          margin: 5px 0;
+          padding: 0;
+          text-transform: uppercase;
+          font-size: 0.9rem;
+          font-family: lemonMilk; }
+        .genre-main article .artist .artist-info a {
+          text-decoration: none;
+          color: black; }
 
 .genre-back {
   width: 100%;

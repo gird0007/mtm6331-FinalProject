@@ -77,46 +77,70 @@
       <h1>featured artists</h1>
     </div>
     <article>
-      <h2>Genre</h2>
-      <div class="img-contain">
-        <img src="https://via.placeholder.com/350x150
+      <div class="first">
+        <h2>Genre</h2>
+      </div>
+      <div class="second">
+        <div class="img-contain">
+          <img src="https://via.placeholder.com/350x150
 
 C/O https://placeholder.com/" alt="">
+        </div>
+        <div class="second-column">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
+          <div class="article-button">
+            <a href="artist.php">view profile</a>
+          </div>
+        </div>
       </div>
-      <h3>Lorem Ipsum</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
-      <div class="article-button">
-        <a href="artist.php">view profile</a>
+      <div class="third">
+        <p><a href="genre.php">view more in this genre</a></p>
       </div>
-      <p><a href="genre.php">view more in this genre</a></p>
     </article>
     <article>
-      <h2>Genre</h2>
-      <div class="img-contain">
-        <img src="https://via.placeholder.com/350x150
+      <div class="first">
+        <h2>Genre</h2>
+      </div>
+      <div class="second">
+        <div class="img-contain">
+          <img src="https://via.placeholder.com/350x150
 
 C/O https://placeholder.com/" alt="">
+        </div>
+        <div class="second-column">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
+          <div class="article-button">
+            <a href="artist.php">view profile</a>
+          </div>
+        </div>
       </div>
-      <h3>Lorem Ipsum</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
-      <div class="article-button">
-        <a href="artist.php">view profile</a>
+      <div class="third">
+        <p><a href="genre.php">view more in this genre</a></p>
       </div>
-      <p><a href="genre.php">view more in this genre</a></p>
     </article>
     <article>
-      <h2>Genre</h2>
-      <div class="img-contain">
-        <img src="https://via.placeholder.com/350x150
+      <div class="first">
+        <h2>Genre</h2>
+      </div>
+      <div class="second">
+        <div class="img-contain">
+          <img src="https://via.placeholder.com/350x150
 
 C/O https://placeholder.com/" alt="">
+        </div>
+        <div class="second-column">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
+          <div class="article-button">
+            <a href="artist.php">view profile</a>
+          </div>
+        </div>
       </div>
-      <h3>Lorem Ipsum</h3>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ut nesciunt aperiam voluptas perspiciatis saepe amet dolor.</p>
-      <div class="article-button">
-        <a href="artist.php">view profile</a>
+      <div class="third">
+        <p><a href="genre.php">view more in this genre</a></p>
       </div>
-      <p><a href="genre.php">view more in this genre</a></p>
     </article>
   </main>
   <hr>
