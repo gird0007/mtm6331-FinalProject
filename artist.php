@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="wrapper">
-<header>
+<header class="artist-header">
   <div class="hero">
     <div class="logo">
       <a href="index.php"><img src="./img/9logo.png" alt="logo_placeholder"></a>
@@ -68,9 +68,7 @@
   <article>
     <div class="artist">
       <div class="artist-img">
-            <img src="https://via.placeholder.com/400
-
-C/O https://placeholder.com/" alt="">
+            <img src="https://via.placeholder.com/400" alt="">
           </div>
           <div class="artist-info">
             <h1>artist name</h1>
@@ -94,14 +92,10 @@ C/O https://placeholder.com/" alt="">
     </div>
     <div class="about-artist-images">
       <div class="about-img">
-        <img src="https://via.placeholder.com/150
-
-C/O https://placeholder.com/" alt="">
+        <img src="https://via.placeholder.com/150" alt="">
       </div>
       <div class="about-img">
-        <img src="https://via.placeholder.com/150
-
-C/O https://placeholder.com/" alt="">
+        <img src="https://via.placeholder.com/150" alt="">
       </div>
     </div>
   </div>
@@ -136,6 +130,11 @@ C/O https://placeholder.com/" alt="">
       </div>
     </div>
   </div>
+  <!-- <div class="booking last-button">
+    <div class="book-button">
+      <h1>book this artist</h1>
+    </div>
+  </div> -->
   <div class="similar">
     <h2>similar artists</h2>
     <div class="similar-artists">
@@ -185,11 +184,6 @@ C/O https://placeholder.com/" alt="">
       </div> -->
     </div>
     </div>
-    </div>
-  </div>
-  <div class="booking">
-    <div class="book-button">
-      <h1>book this artist</h1>
     </div>
   </div>
 </main>

@@ -10,6 +10,9 @@ body {
 .wrapper {
   width: 100%;
   height: 100%; }
+  @media all and (min-width: 35rem) {
+    .wrapper .artist-header {
+      height: 180px !important; } }
   .wrapper header {
     width: 100%;
     height: 300px; }
@@ -305,7 +308,8 @@ body {
   border-radius: 50%;
   position: fixed;
   right: 15px;
-  transition: all 1s 0.1s; }
+  transition: all 1s 0.1s;
+  z-index: 2; }
   @media all and (min-width: 35rem) {
     .sidebar-arrow {
       display: none; } }
@@ -526,14 +530,20 @@ body {
   font-family: lemonMilk; }
 
 .artist-main {
-  width: 100%; }
+  width: 100%;
+  background-color: #4c4c4d; }
   @media all and (min-width: 35rem) {
     .artist-main {
+      margin: 0 auto;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr; } }
   .artist-main article {
     margin: 1.2rem 0;
     padding: 1rem 0; }
+    @media all and (min-width: 35rem) {
+      .artist-main article {
+        grid-row: 1/3;
+        align-self: start; } }
     .artist-main article .artist {
       width: 100%;
       display: flex;
@@ -573,7 +583,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    margin-top: 1rem; }
+    @media all and (min-width: 35rem) {
+      .artist-main .booking {
+        grid-column: 2/4;
+        align-self: start; } }
     .artist-main .booking .book-button {
       border: 1px solid black;
       width: 70%;
@@ -588,6 +603,8 @@ body {
         font-size: 1.2rem;
         text-transform: uppercase;
         font-family: lemonMilk; }
+  .artist-main .last-button {
+    grid-column: 1/4; }
   .artist-main .about-artist {
     width: 90%;
     margin: 0 auto 1.5rem auto;
@@ -596,6 +613,10 @@ body {
     align-items: center;
     flex-direction: column;
     position: relative; }
+    @media all and (min-width: 35rem) {
+      .artist-main .about-artist {
+        grid-column: 2/4;
+        grid-row: 1/2; } }
     .artist-main .about-artist .text h2 {
       text-align: center;
       text-transform: uppercase;
@@ -620,12 +641,19 @@ body {
           width: 100%; }
   .artist-main .tracks-container {
     width: 100%; }
+    @media all and (min-width: 35rem) {
+      .artist-main .tracks-container {
+        background-color: #40403f; } }
     .artist-main .tracks-container h2 {
       text-align: center;
       text-transform: uppercase;
       font-family: lemonMilk; }
   .artist-main .calender {
     width: 100%; }
+    @media all and (min-width: 35rem) {
+      .artist-main .calender {
+        grid-column: 2/4;
+        background-color: #40403f; } }
     .artist-main .calender h2 {
       text-align: center;
       text-transform: uppercase;
@@ -678,6 +706,9 @@ body {
   .artist-main .similar {
     width: 100%;
     padding: 10px; }
+    @media all and (min-width: 35rem) {
+      .artist-main .similar {
+        grid-column: 1/4; } }
     .artist-main .similar .similar-artists {
       display: grid;
       grid-gap: 5px;
@@ -691,28 +722,24 @@ body {
         .artist-main .similar .similar-artists .artist-img a img {
           width: 100%;
           border-radius: 50%; }
-
-.similar-artists .artist-info {
-  padding-bottom: 10px; }
-
-.similar-artists .artist-info a h1 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  text-align: center; }
-
-.similar-artists .artist-info h2 {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 0;
-  font-family: lemonMilk; }
-
-.similar-artists .artist-info h3 {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  font-family: lemonMilk; }
+      .artist-main .similar .similar-artists .artist-info {
+        padding-bottom: 10px; }
+        .artist-main .similar .similar-artists .artist-info a h1 {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          text-align: center; }
+        .artist-main .similar .similar-artists .artist-info h2 {
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          text-align: center;
+          margin-bottom: 0;
+          font-family: lemonMilk; }
+        .artist-main .similar .similar-artists .artist-info h3 {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          text-align: center;
+          margin: 0;
+          font-family: lemonMilk; }
 
 .right-arrow {
   display: flex;
