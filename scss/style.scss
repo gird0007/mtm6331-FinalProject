@@ -174,8 +174,10 @@ body {
           flex-direction: row-reverse;
           align-items: center;
           .img-contain {
-            width: 45%;
+            width: 500px;
+            height: 220px;
             margin-right: 0;
+            overflow: hidden;
           }
           .second-column {
             width: calc(100% / 2);

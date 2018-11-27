@@ -142,8 +142,10 @@ body {
             flex-direction: row-reverse;
             align-items: center; }
             .wrapper main article .second .img-contain {
-              width: 45%;
-              margin-right: 0; }
+              width: 500px;
+              height: 220px;
+              margin-right: 0;
+              overflow: hidden; }
             .wrapper main article .second .second-column {
               width: calc(100% / 2);
               display: flex;
